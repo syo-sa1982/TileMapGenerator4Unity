@@ -15,3 +15,7 @@
 /*.userprefs
 /*.pidb
 /*.booproj
+
+
+Assets/Debugger.meta
+Assets/Debugger/*

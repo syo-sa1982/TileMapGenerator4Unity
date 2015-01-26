@@ -49,11 +49,11 @@ public class XmlMapGenerator
 		XmlNodeList images = xmlDoc.GetElementsByTagName ("image");
 		XmlNodeList layerList = xmlDoc.GetElementsByTagName("layer");
 
-		int i = 0;
-		foreach(XmlNodeList layer in layerList){
+		for (int i = 0; i < layerList.Count; i++) {
+
 			Debug.Log (layerList[i].Attributes["name"].Value);
 			string key = layerList [i].Attributes ["name"].Value;
-			i++;
+			tileDatas.Add (key, layerList[i]);
 		}
 
 
